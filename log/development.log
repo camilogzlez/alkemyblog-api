@@ -70,3 +70,344 @@ Migrating to AddTitleToCategories (20210720200800)
   [1m[36mActiveRecord::InternalMetadata Load (1.0ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(1244800722532467135)[0m
   [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/posts" for ::1 at 2021-07-20 17:57:33 -0300
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /home/camilogzlez/code/camilogzlez/alkemyblog-api/app/controllers/api/v1/posts_controller.rb to define constant Api::V1::PostsController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `const_get'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `block in constantize'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `each'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `inject'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `constantize'
+activesupport (6.1.4) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/api/v1/posts" for ::1 at 2021-07-20 17:58:47 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for ::1 at 2021-07-20 17:58:54 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for ::1 at 2021-07-20 17:59:01 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/restaurants" for 127.0.0.1 at 2021-07-20 18:01:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/restaurants"):
+  
+Started GET "/api/v1/restaurants" for 127.0.0.1 at 2021-07-20 18:01:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/restaurants"):
+  
+Started GET "/api/v1/restaurants" for 127.0.0.1 at 2021-07-20 18:01:49 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/restaurants"):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:02:05 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:02:07 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/post" for 127.0.0.1 at 2021-07-20 18:02:16 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/api/v1/post"):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:02:19 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(1244800722532467135)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(1244800722532467135)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:09:15 -0300
+  
+Zeitwerk::NameError (expected file /home/camilogzlez/code/camilogzlez/alkemyblog-api/app/controllers/api/v1/posts_controller.rb to define constant Api::V1::PostsController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `const_get'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `block in constantize'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `each'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `inject'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `constantize'
+activesupport (6.1.4) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:09:32 -0300
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+Zeitwerk::NameError (expected file /home/camilogzlez/code/camilogzlez/alkemyblog-api/app/controllers/api/v1/posts_controller.rb to define constant Api::V1::PostsController, but didn't):
+  
+zeitwerk (2.4.2) lib/zeitwerk/loader/callbacks.rb:18:in `on_file_autoloaded'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:27:in `block in require'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `tap'
+zeitwerk (2.4.2) lib/zeitwerk/kernel.rb:26:in `require'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `const_get'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:288:in `block in constantize'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `each'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `inject'
+activesupport (6.1.4) lib/active_support/inflector/methods.rb:284:in `constantize'
+activesupport (6.1.4) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/permissions_policy.rb:22:in `call'
+actionpack (6.1.4) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/cookies.rb:689:in `call'
+activerecord (6.1.4) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+web-console (4.1.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.1.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.1.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-mini-profiler (2.3.2) lib/mini_profiler/profiler.rb:384:in `call'
+webpacker (5.4.0) lib/webpacker/dev_server_proxy.rb:25:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.1.4) lib/rails/engine.rb:539:in `call'
+puma (5.3.2) lib/puma/configuration.rb:249:in `call'
+puma (5.3.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.3.2) lib/puma/thread_pool.rb:338:in `with_force_shutdown'
+puma (5.3.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.3.2) lib/puma/server.rb:438:in `process_client'
+puma (5.3.2) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+Started GET "/api/v1/posts" for ::1 at 2021-07-20 18:09:44 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:11:33 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:11:38 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:11:55 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:12:56 -0300
+  
+ActionController::RoutingError (uninitialized constant Api::V1::PostsController):
+  
+Started GET "/api/v1/posts" for ::1 at 2021-07-20 18:20:08 -0300
+Processing by Api::V1::PostsController#index as JSON
+  Rendering api/v1/posts/index.json.jbuilder
+  [1m[36mPost Load (73.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/api/v1/posts/index.json.jbuilder:1
+  Rendered api/v1/posts/index.json.jbuilder (Duration: 85.5ms | Allocations: 4288)
+Completed 200 OK in 376ms (Views: 86.4ms | ActiveRecord: 79.8ms | Allocations: 6902)
+
+
+Started GET "/api/v1/posts" for 127.0.0.1 at 2021-07-20 18:20:17 -0300
+Processing by Api::V1::PostsController#index as JSON
+  Rendering api/v1/posts/index.json.jbuilder
+  [1m[36mPost Load (1.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/api/v1/posts/index.json.jbuilder:1
+  Rendered api/v1/posts/index.json.jbuilder (Duration: 3.5ms | Allocations: 916)
+Completed 200 OK in 5ms (Views: 2.9ms | ActiveRecord: 1.1ms | Allocations: 1312)
+
+
+Started GET "/" for ::1 at 2021-07-20 18:44:25 -0300
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 7.8ms | Allocations: 114)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/camilogzlez/code/camilogzlez/alkemyblog-api/public/packs
+[Webpacker] Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Hash: 1103a72fd4e896d0a15f
+Version: webpack 4.46.0
+Time: 2520ms
+Built at: 07/20/2021 6:44:34 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-09a5ceeb67528f47c934.js    618 KiB  application  [emitted] [immutable]  application
+js/application-09a5ceeb67528f47c934.js.map    756 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-09a5ceeb67528f47c934.js js/application-09a5ceeb67528f47c934.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 949 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 472 bytes {application} [built]
+    + 6 hidden modules
+
+  Rendered shared/_navbar.html.erb (Duration: 12.5ms | Allocations: 597)
+  Rendered shared/_flashes.html.erb (Duration: 8.3ms | Allocations: 218)
+  Rendered layout layouts/application.html.erb (Duration: 9190.0ms | Allocations: 122630)
+Completed 200 OK in 9214ms (Views: 9199.9ms | Allocations: 125377)
+
+
