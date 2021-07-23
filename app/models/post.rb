@@ -1,4 +1,5 @@
 class Post < ApplicationRecord
+  acts_as_paranoid
   belongs_to :user
   belongs_to :category, optional: true
   validates :title, presence: true, uniqueness: true

@@ -29,7 +29,7 @@ gem 'simple_token_authentication'
 gem 'bootsnap', '>= 1.4.4', require: false
 
 gem 'devise'
-
+gem 'paranoia', '~> 2.1', '>= 2.1.5'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
